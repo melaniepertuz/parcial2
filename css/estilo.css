@@ -1,0 +1,144 @@
+/* Patrones globales del CSS */
+
+h6, aside#menu-ambiente nav a { font-family: 'Times New Roman', sans-serif }
+h1, h2, h3, h4, h5 { font-family: 'Times New Roman', sans-serif }
+p, a, button, form, input, select, option, textarea, em, span, strong, div { font-family: 'Times New Roman', sans-serif }
+
+body { margin: 0 !important; overflow-x: hidden;background-color:rgba(31, 29, 29); }
+
+header, main, footer, aside, section, article, figure, nav, div { display: block; }
+
+h1, h2, h3, h4, h5, h6, p, figure { margin: 0; }
+
+
+aside#menu-ambiente { width: 290px; height: 100%; display: none; margin: 0; float: none; position: fixed; top: 0; left: -290px; z-index: 99999; background: rgba(31, 29, 29, 0.603); } 
+
+aside#menu-ambiente a#abrir { width: 35px; height: auto; display: block; margin: 0; float: none; position: absolute; top: 15px; right: -35px; background: #fff; color:  rgba(31, 29, 29, 0.603); text-align: center; padding: 6px 0; font-size: 1.25em; border-radius: 0 5px 5px 0; transition: all 0.3s ease-in; }
+aside#menu-ambiente a#abrir:hover { background: rgb(132, 0, 255); transition: all 0.3s ease-in; }
+
+aside#menu-ambiente a#cerrar { width: 35px; height: auto; display: none; margin: 0; float: none; position: absolute; top: 15px; right: -35px; background: #fff; color:  rgba(31, 29, 29, 0.603); text-align: center; padding: 6px 0; font-size: 1.25em; border-radius: 0 5px 5px 0; transition: all 0.3s ease-in; }
+aside#menu-ambiente a#cerrar:hover { background:rgb(132, 0, 255); transition: all 0.3s ease-in; }
+
+aside#menu-ambiente nav { height: auto; width: 80%; margin: 10% auto; float: none; position: relative; }
+aside#menu-ambiente nav a { width: 100%; height: auto; display: block; margin: 0 auto 15px; float: none; position: relative; text-align: center; font-size: 1.25em; line-height: 1em; padding: 10px 0; color: #fff; letter-spacing: 0.07em; font-family: 'Times New Roman', sans-serif; text-decoration: none; transition: all 0.3s ease-in; }
+aside#menu-ambiente nav a:hover { color: rgb(132, 0, 255); transition: all 0.3s ease-in; }
+
+
+aside#boton-whatsapp { width: 45px; height: 45px; margin: 0; float: none; position: fixed; bottom: 20px; right: 20px; z-index: 9999; }
+aside#boton-whatsapp a { width: 100%; height: auto; margin: 0; float: none; position: relative; display: block; text-align: center; color: #fff; background: rgb(43 199 4); font-size: 1.5em; padding: 8px 0; border-radius: 50%; transition: all 0.3s ease-in; }
+aside#boton-whatsapp a:hover { background: #d00f0f; transition: all 0.3s ease-in; }
+
+
+/* Header */
+header { width: 100%; height: 80px; margin: 0; float: none; position: fixed; top: 0; left: 0; z-index: 99990; background: rgba(31, 29, 29); }
+header article { width: 1100px; height: 80px; margin: 0 auto; float: none; position: relative; }
+
+header article figure { width: 94px; height: 80px; margin: 0 auto; float: left; position: relative; }
+header article figure a { width: 100%; height: auto; margin: 26px auto; float: none; position: relative; display: block; transition: all 0.3s ease-in; }
+header article figure a img { width: 300%; height: auto; margin: 0 auto; float: none; position: relative; display: block; }
+header article figure a:hover { transform: scale(1.05); transition: all 0.3s ease-in; }
+
+header article nav { width: 520px; height: 40px; margin: 22px 0; float: right; position: relative; }
+header article nav a { width: auto; height: auto; margin: 0 15px; float: left; position: relative; display: block; padding: 12px 0; text-decoration: none; color: #fff; font-weight: 400; font-size: 1em; line-height: 1em; text-transform: uppercase; letter-spacing: 0.09em; text-shadow: 0 0 8px rgb(0 0 0 / 70%); transition: all 0.3s ease-in; }
+header article nav a:hover { color: rgb(132, 0, 255); text-shadow: 0 0 8px rgb(0 0 0 / 30%); transition: all 0.3s ease-in; }
+
+
+/* Main */
+main { width: 100%; height: auto; margin: 80px auto 0 auto; float: none; position: relative; }
+
+
+/* Mapa Google Maps */
+main section#mapa-googlemaps { width: 75%; height: auto; margin: 20px auto; float: none; position: relative; }
+main section#mapa-googlemaps iframe { width: 100%; height: 88vh; margin: 0 auto; float: none; position: relative; }
+
+
+/* Banner Video HTML5 */
+main section#banner-video-html5 { width: 100%; height: auto; margin: 20px auto; float: none; position: relative; }
+main section#banner-video-html5 video { width: 100%; height: 88vh; margin: 0 auto; float: none; position: relative; background:  rgba(31, 29, 29, 0.603); }
+
+/* Slide con Imágenes */
+main section#slide-imagenes { width: 100%; height: auto; margin: 0 auto; float: none; position: relative; }
+main section#slide-imagenes article.slick-banner { width: 100%; height: 88vh; margin: 0 auto; float: none; position: relative; overflow: hidden; }
+
+main section#slide-imagenes article.slick-banner figure { width: 100%; height: 88vh; margin: 0; float: left; position: relative; }
+main section#slide-imagenes article.slick-banner figure#slide-01 { background: url('../img/slide-01.png') no-repeat center center; background-size: cover; }
+main section#slide-imagenes article.slick-banner figure#slide-02 { background: url('../img/slide-02.jpeg') no-repeat center center; background-size: cover; }
+main section#slide-imagenes article.slick-banner figure#slide-03 { background: url('../img/slide-03.jpeg') no-repeat center center; background-size: cover; }
+main section#slide-imagenes article.slick-banner figure#slide-04 { background: url('../img/slide-04.jpeg') no-repeat center center; background-size: cover; }
+
+.slick-prev { left: 25px !important; z-index: 10 !important; }
+.slick-next { right: 25px !important; z-index: 11 !important; }
+
+/* Formulario de Contáctenos */
+main section#formulario-contactenos { width: 100%; height: auto; margin: 20px auto; float: none; position: relative; }
+main section#formulario-contactenos article { width: 600px; height: auto; margin: 0 auto; float: none; position: relative; }
+main section#formulario-contactenos article form#formu-contacto { width: 90%; height: auto; margin: 15px auto; float: none; position: relative; }
+
+main section#formulario-contactenos article form#formu-contacto input#nombre,
+main section#formulario-contactenos article form#formu-contacto input#correo,
+main section#formulario-contactenos article form#formu-contacto input#telefono { width: 94%; height: auto; display: block; margin: 0 auto 10px; float: none; position: relative; border: none; background: #e2e2e2; border-radius: 5px; font-size: 1em; padding: 13px 3%; }
+
+main section#formulario-contactenos article form#formu-contacto select#asunto { width: 100%; height: auto; display: block; margin: 0 0 10px; float: none; border: none; background: #e2e2e2; border-radius: 5px; font-size: 1em; padding: 13px 3%; }
+main section#formulario-contactenos article form#formu-contacto select#asunto option {  }
+
+main section#formulario-contactenos article form#formu-contacto textarea#mensaje { width: 94%; height: 70px; display: block; margin: 0 auto 10px; float: none; position: relative; border: none; background: #e2e2e2; border-radius: 5px; font-size: 1em; padding: 13px 3%; }
+
+main section#formulario-contactenos article form#formu-contacto input#enviar { width: 150px; height: auto; display: block; margin: 0; float: none; position: relative; border: none; background: #f50; color: #fff; letter-spacing: 0.35em; border-radius: 5px; font-size: 1em; padding: 13px 3%; transition: all 0.3s ease-in; }
+main section#formulario-contactenos article form#formu-contacto input#enviar:hover { background: #333; cursor: pointer; transition: all 0.3s ease-in; }
+
+main section#formulario-contactenos article form#formu-contacto input#nombre:focus,
+main section#formulario-contactenos article form#formu-contacto input#correo:focus,
+main section#formulario-contactenos article form#formu-contacto input#telefono:focus,
+main section#formulario-contactenos article form#formu-contacto textarea#mensaje:focus { outline: none; background: #333; color: #fff; transition: all 0.3s ease-in; }
+
+
+
+/* FOOTER */
+footer { width: 100%; height: 200px; margin: 0; float: none; position: relative;  background-color: rgba(31, 29, 29); background-size: cover; }
+
+
+
+
+
+/* Zona Responsive Web Design - Media Queries */
+
+/* Rango de Tablets: (Máximo 1199px - Mínimo 500px) */
+@media only screen and (max-width: 1199px){
+    header { height: 80px; box-shadow: 0 3px 5px rgb(0 0 0 / 15%); }
+    header article { width: 80%; height: 80px; }
+    header article figure { width: 80px; height: 93px; margin: 0 75px; float: none; }
+    header article nav { display: none; }
+
+    aside#menu-ambiente { display: block; }
+
+    /* Mapa Google Maps */
+    main section#mapa-googlemaps iframe { height: 40vh; }
+
+
+    /* Banner Video HTML5 */
+    main section#banner-video-html5 video { height: 40vh; }
+
+
+    /* Slide con Imágenes */
+    main section#slide-imagenes article.slick-banner { height: 60vh; }
+    main section#slide-imagenes article.slick-banner figure { height: 60vh; }
+    
+
+
+    main section#formulario-contactenos article { width: 80%; }
+    main section#formulario-contactenos article h5 { font-size: 2em; }
+    main section#formulario-contactenos article form#formu-cont select#asunto { width: 100%; }
+
+
+
+}
+
+/* Rango de Smarthphones: (Máximo 499px - Mínimo 400px) */
+@media only screen and (max-width: 499px){
+
+}
+
+/* Rango de Smarthphones Pequeños: (Máximo 399px - Mínimo 340px) */
+@media only screen and (max-width: 399px){
+    
+}

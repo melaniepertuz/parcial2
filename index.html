@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+       <!-- Título de la Página -->
+       <title>Ambiente</title>
+       <meta title="Ambiente">
+
+       <!-- Codificación de Caracteres en Español -->
+       <meta charset="utf-8">
+
+       <!-- Inclusión del Ícono de Favoritos -->
+       <link rel="icon" href="img/favicon.png">
+
+       <!-- Meta para bloquear el Zoom Out en móviles - Responsive Design -->
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+
+       <!-- Cargar librería PrefixFree desde CDN -->
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+       <!-- Cargar librería de íconos Font Awesome Icons -->
+       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+       <!-- Cargar tipografías desde Google Fonts -->
+       <link rel="preconnect" href="https://fonts.gstatic.com">
+       <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&family=Permanent+Marker&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+       <!-- Conexión hacia CSS propio -->
+       <link rel="stylesheet" href="css/estilo.css">
+    </head>
+
+    <body>
+         <aside id="menu-ambiente">
+            <a href="#" id="abrir">
+                <i class="fas fa-bars"></i>
+            </a>
+            <a href="#" id="cerrar">
+                <i class="fas fa-times"></i>
+            </a>
+            <nav>
+                <a href="#slide-imagenes">COLECCIÓN</a>
+                <a href="#mapa-googlemaps">UBICACIÓN</a>
+                <a href="#banner-video-html5">RECETAS</a>
+                <a href="#formulario-contactenos">SUSCRÍBETE</a>
+            </nav>
+        </aside>
+
+        <!-- Componente Botón WhatsApp -->
+        <aside id="boton-whatsapp">
+            <a href="https://api.whatsapp.com/send?phone=573507893795" target="_blank">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </aside>
+
+        <header>
+            <article>
+                <figure>
+                    <a href="index.html">
+                        <img src="img/logo.png">
+                    </a>
+                </figure>
+                <nav>
+                    <a href="#slide-imagenes">COLECCIÓN</a>
+                    <a href="#mapa-googlemaps">UBICACIÓN</a>
+                    <a href="#banner-video-html5">RECETAS</a>
+                    <a href="#formulario-contactenos">SUSCRÍBETE</a>
+                </nav>
+            </article>
+        </header>
+
+        <main>
+                <!-- Slide con Imágenes -->
+
+            <section id="slide-imagenes">
+                <article class="slick-banner">
+                    <figure id="slide-01">
+                    </figure>
+
+                    <figure id="slide-02">
+                    </figure>
+
+                    <figure id="slide-03">
+                    </figure>
+
+                    <figure id="slide-04">
+                    </figure>
+                </article>
+            </section>
+
+               <!-- Mapa de Google Maps -->
+
+               <section id="mapa-googlemaps">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125322.76880324606!2d-74.89774984179688!3d11.01335800000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef42c4d3bdfee89%3A0x343cb686f3d2459f!2sAmbiente%20Gourmet!5e0!3m2!1ses-419!2sco!4v1619120341151!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>   
+            </section>
+
+        <!-- Video desde YouTube -->
+
+        <section id="banner-video-html5">
+            <video width="100%" height="700" preload="auto" controls>
+                <source src="img/video-html5.mp4" type="video/mp4">
+            </video>
+
+            <!-- Formulario -->
+            <section id="formulario-contactenos">
+                <article>
+                    <form id="formu-contacto" action="" method="get">
+                        <input type="text" id="nombre" placeholder="Nombre Completo">
+                        <input type="email" id="correo" placeholder="Correo Electrónico">
+                        <input type="tel" id="telefono" placeholder="Teléfono">
+                        <select id="asunto">
+                            <option>Asunto</option>
+                            <option value="mas-info">Más información de productos</option>
+                            <option value="ser-distribuidor">Quiero ser distribuidor</option>
+                            <option value="pagos-otra-ciudad">Pagos desde otra ciudad</option>
+                            <option value="cotizacion">Solicitar cotización</option>
+                        </select>
+                        <textarea rows="3" id="mensaje" placeholder="Mensaje"></textarea>
+                        <input type="submit" id="enviar" value="ENVIAR">
+                    </form>
+                </article>
+            </section>
+        </main>
+
+        <footer>
+        </footer>
+
+        <!-- Zona de JavaScript -->
+
+        <!-- 1°: LLamado a jQuery desde un CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
+        <!-- 2°: Llamado a librerías hijo de jQuery -->
+        <!-- jQuery Easing desde CDN -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+        <!-- Cargar JS propio -->
+        <script src="js/script.js"></script>
+
+        <!-- Llamado a Slick Slider desde CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    </body>
+</html>
